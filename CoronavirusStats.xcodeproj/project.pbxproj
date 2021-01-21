@@ -19,6 +19,10 @@
 		66862F6B259A6CEE0083175D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66862F6A259A6CEE0083175D /* MapViewController.swift */; };
 		66A2E4C9257FD51400030FEB /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2E4C8257FD51400030FEB /* CountryListModel.swift */; };
 		66ADBBAF2598BC9C00CC1A7F /* WorldDataDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ADBBAE2598BC9C00CC1A7F /* WorldDataDetailViewController.swift */; };
+		66B9D22425BA27C4007AC6B0 /* countrySearchAndGraph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66B9D22025BA27C4007AC6B0 /* countrySearchAndGraph.gif */; };
+		66B9D22525BA27C4007AC6B0 /* locationGraph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66B9D22125BA27C4007AC6B0 /* locationGraph.gif */; };
+		66B9D22725BA27C4007AC6B0 /* locationData.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66B9D22325BA27C4007AC6B0 /* locationData.gif */; };
+		66B9D22B25BA27DC007AC6B0 /* noDataAlertView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 66B9D22A25BA27DC007AC6B0 /* noDataAlertView.gif */; };
 		66E373BF2559D48200D0EC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E373BE2559D48200D0EC10 /* AppDelegate.swift */; };
 		66E373C12559D48200D0EC10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E373C02559D48200D0EC10 /* SceneDelegate.swift */; };
 		66E373C62559D48200D0EC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E373C42559D48200D0EC10 /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		66862F6A259A6CEE0083175D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		66A2E4C8257FD51400030FEB /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
 		66ADBBAE2598BC9C00CC1A7F /* WorldDataDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataDetailViewController.swift; sourceTree = "<group>"; };
+		66B9D22025BA27C4007AC6B0 /* countrySearchAndGraph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = countrySearchAndGraph.gif; sourceTree = "<group>"; };
+		66B9D22125BA27C4007AC6B0 /* locationGraph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = locationGraph.gif; sourceTree = "<group>"; };
+		66B9D22325BA27C4007AC6B0 /* locationData.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = locationData.gif; sourceTree = "<group>"; };
+		66B9D22A25BA27DC007AC6B0 /* noDataAlertView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = noDataAlertView.gif; sourceTree = "<group>"; };
 		66E373BB2559D48200D0EC10 /* CoronavirusStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoronavirusStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E373BE2559D48200D0EC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66E373C02559D48200D0EC10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		66B9D21F25BA2791007AC6B0 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				66B9D22025BA27C4007AC6B0 /* countrySearchAndGraph.gif */,
+				66B9D22325BA27C4007AC6B0 /* locationData.gif */,
+				66B9D22125BA27C4007AC6B0 /* locationGraph.gif */,
+				66B9D22A25BA27DC007AC6B0 /* noDataAlertView.gif */,
+			);
+			name = Gifs;
+			path = ../Gifs;
+			sourceTree = "<group>";
+		};
 		66E373B22559D48100D0EC10 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +155,7 @@
 				66E373C72559D48400D0EC10 /* Assets.xcassets */,
 				66E373C92559D48400D0EC10 /* LaunchScreen.storyboard */,
 				66E373CC2559D48400D0EC10 /* Info.plist */,
+				66B9D21F25BA2791007AC6B0 /* Gifs */,
 			);
 			path = CoronavirusStats;
 			sourceTree = "<group>";
@@ -214,9 +235,13 @@
 			files = (
 				661565EA2586C7E400E40E1C /* staySafe.gif in Resources */,
 				662350472580190900A8A66F /* faceMask.json in Resources */,
+				66B9D22425BA27C4007AC6B0 /* countrySearchAndGraph.gif in Resources */,
+				66B9D22525BA27C4007AC6B0 /* locationGraph.gif in Resources */,
 				66E373CB2559D48400D0EC10 /* LaunchScreen.storyboard in Resources */,
 				66E373C82559D48400D0EC10 /* Assets.xcassets in Resources */,
+				66B9D22725BA27C4007AC6B0 /* locationData.gif in Resources */,
 				66E373C62559D48200D0EC10 /* Main.storyboard in Resources */,
+				66B9D22B25BA27DC007AC6B0 /* noDataAlertView.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
