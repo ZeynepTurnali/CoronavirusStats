@@ -65,13 +65,13 @@ class WorldDataDetailViewController: UIViewController {
                     self.worldCountryNameLabel.text = "Country: \(model.last!.country)"
                     print("Country: \(model.last!.country)")
                     
-                    let dateFormatterInput = DateFormatter()
-                    dateFormatterInput.dateFormat = "yyyy-MM-dd"
-                    let showDate = dateFormatterInput.date(from: model.last!.date)
-                    dateFormatterInput.dateFormat = "MM/dd/yyyy"
                     
-                    self.worldDateLabel.text = "Date: \(showDate)"
-                    print("Date: \(model.last!.date)")
+                    var date = model.last!.date
+                    let dateArray = date.components(separatedBy: "T")
+                    date = dateArray[0].replacingOccurrences(of: "-", with: ".")
+                    
+                    self.worldDateLabel.text = "Date: \(date)"
+                    print("Date: \(date)")
                     
                     self.worldConfirmedLabel.text = "Confirmed: \(model.last!.confirmed)"
                     print("Confirmed: \(model.last!.confirmed)")

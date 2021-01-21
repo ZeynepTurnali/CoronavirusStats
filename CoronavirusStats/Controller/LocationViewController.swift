@@ -74,8 +74,12 @@ class LocationViewController: UIViewController{
                     self.countryNameLabel.text = "Country: \(model.last!.country)"
                     print("Country: \(model.last!.country)")
                     
-                    self.dateLabel.text = "Date: \(model.last!.date)"
-                    print("Date: \(model.last!.date)")
+                    var date = model.last!.date
+                    let dateArray = date.components(separatedBy: "T")
+                    date = dateArray[0].replacingOccurrences(of: "-", with: ".")
+                    
+                    self.dateLabel.text = "Date: \(date)"
+                    print("Date: \(date)")
                     
                     self.confirmedLabel.text = "Confirmed: \(model.last!.confirmed)"
                     print("Confirmed: \(model.last!.confirmed)")
